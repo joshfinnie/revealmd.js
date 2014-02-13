@@ -1,2 +1,4 @@
 node_modules/
 presentation/assets
+
+src/app.js
