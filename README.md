@@ -6,10 +6,22 @@ A Node.js application that renders markdown into reveal.js style html.
 
 This is in no means ready for use. Just testing out the waters.
 
+## Installing
+
+Make sure `Grunt-CLI` & `Bower` are installed.
+
+    $ npm install -g grunt-cli
+    $ npm install -g bower
+
+Then run the following commands:
+
+    $ npm install
+    $ bower install
+
 ## Running
 
-Just run `$ grunt watch` and any changes made to `index.md` will be converted 
-into `index.html` as slides.
+Just run `$ grunt serve` and any changes made to `templates/slides.md` will be converted 
+into `presentation/index.html` as slides.
 
 ## TODO
 
