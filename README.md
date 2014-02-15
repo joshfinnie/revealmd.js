@@ -4,9 +4,7 @@
 
 A Node.js application that renders markdown into reveal.js style html.
 
-## Work In Progress.
-
-This is in no means ready for use. Just testing out the waters.
+# Work In Progress
 
 ## Installing
 
@@ -27,7 +25,7 @@ into `presentation/index.html` as slides.
 
 ## TODO
 
-* Deal with lower level slides.
+I will be adding TODO items to the [Github Issues](https://github.com/joshfinnie/revealmd.js/issues?state=open)
 
 ### LICENSE
 
