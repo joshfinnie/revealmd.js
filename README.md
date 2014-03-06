@@ -1,6 +1,6 @@
 # revealmd.js
 
-[![Dependency Status](https://david-dm.org/joshfinnie/revealmd.js.png)](https://david-dm.org/joshfinnie/revealmd.js.png)
+[![Dependency Status](https://david-dm.org/joshfinnie/revealmd.js.png)](https://david-dm.org/joshfinnie/revealmd.js)
 
 A Node.js application that renders markdown into reveal.js style html.
 
