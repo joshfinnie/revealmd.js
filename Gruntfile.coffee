@@ -11,8 +11,8 @@ module.exports = (grunt) ->
         options:
           livereload: true
         files: [
-          'templates/index.jade'
-          'templates/slides.md'
+          'presentation/templates/index.jade'
+          'presentation/templates/slides.md'
         ]
       coffeelint:
         files: [
