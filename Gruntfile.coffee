@@ -24,8 +24,8 @@ module.exports = (grunt) ->
         ]
       createApp:
         files: [
-          'templates/index.jade'
-          'templates/slides.md'
+          'presentation/templates/index.jade'
+          'presentation/templates/slides.md'
           'src/app.coffee'
         ]
         tasks: [

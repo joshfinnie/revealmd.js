@@ -27,8 +27,8 @@ marked.setOptions
   highligh: highlight
   renderer: renderer
 
-slides = path.join(__dirname + '/../templates/slides.md')
-template = path.join(__dirname + '/../templates/index.jade')
+slides = path.join(__dirname + '/../presentation/templates/slides.md')
+template = path.join(__dirname + '/../presentation/templates/index.jade')
 presentation = path.join(__dirname + '/../presentation/index.html')
 
 fs.readFile slides, (err, data) ->
