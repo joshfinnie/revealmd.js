@@ -30,6 +30,7 @@ module.exports = (grunt) ->
         ]
         tasks: [
           'coffee'
+          'uglify'
           'shell:runApp'
         ]
     coffeelint:
@@ -42,18 +43,18 @@ module.exports = (grunt) ->
         options:
           bare: true
         files:
-          "src/app.js": "src/app.coffee"
+          "bin/app.js": "src/app.coffee"
     uglify:
       option:
         banner: "#!/usr/local/bin/node"
       target:
         files:
-          "bin/app.js": ["src/app.js"]
+          "bin/app.js": ["bin/app.js"]
     shell:
       runApp:
         options:
           stout: true
-        command: "node bin/app.js"
+        command: "node bin/app.min.js"
     connect:
       livereload:
         options:

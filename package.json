@@ -26,5 +26,8 @@
     "marked": "0.3.1",
     "pygmentize-bundled": "2.1.0",
     "time-grunt": "0.2.9"
+  },
+  "devDependencies": {
+    "grunt-contrib-jade": "^0.13.0"
   }
 }

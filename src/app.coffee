@@ -6,13 +6,24 @@ marked      = require("marked")
 jade        = require("jade")
 renderer    = new marked.Renderer()
 
-firstSlide  = true
+firstSingleSlide  = true
+firstVerticalSlide  = true
+inVerticalSlide = false
 
 renderer.paragraph = (text) ->
-  if text is "!slide" and firstSlide
-    firstSlide = false
+  if text is "!slide" and firstSingleSlide
+    firstSingleSlide = false
     "<section>\n"
+  else if text is "!slide" and inVerticalSlide
+    inVerticalSlide = false
+    "</section>\n</section>\n<section>\n"
   else if text is "!slide"
+    "</section>\n<section>\n"
+  else if text is "!!slide" and firstVerticalSlide
+    inVerticalSlide = true
+    firstVerticalSlide = false
+    "<section>\n<section>\n"
+  else if text is "!!slide"
     "</section>\n<section>\n"
   else
     "<p>" + text + "</p>\n"

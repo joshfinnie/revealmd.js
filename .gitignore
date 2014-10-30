@@ -1,4 +1,5 @@
 node_modules/
 presentation/assets
 npm-debug.log
-src/app.js
+presentation/index.html
+bin/app.js
