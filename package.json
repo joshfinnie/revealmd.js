@@ -8,7 +8,7 @@
     "url": "https://github.com/joshfinnie/revealmd.js.git"
   },
   "scripts": {
-    "test": "grunt test"
+    "test": "grunt test",
     "postinstall": "bower install && grunt serve"
   },
   "author": "Josh Finnie <josh@jfin.us>",
